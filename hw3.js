@@ -48,7 +48,7 @@ arrayFunc(2, 4);
 const randArray = (start, end) => {
     const k = [];
     for (let i = start; i <= end; i++) {
-        k.push(Math.round(Math.random() * 501));
+        k.push(Math.round(Math.random() * 500));
     }
     return k;
 }
