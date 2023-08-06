@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 task</title>
+</head>
+
+<body>
+    <h1>I'am a big header!!!</h1>
+    <div id="myDiv">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+        <p>Fourth paragraph</p>
+    </div>
+    <ul id="myList">
+        <li>Make</li>
+        <li>me</li>
+        <li>horizontal!</li>
+    </ul>
+    <span>Make me invisible, please!</span>
+
+
+    <script>
+        const header = document.querySelector('h1');
+        header.style.fontSize = '100px';
+        header.style.color = 'red';
+
+
+        const myDiv = document.getElementById('myDiv');
+        const paragraphs = myDiv.getElementsByTagName('p');
+        for (let i = 0; i < paragraphs.length; i++) {
+            const paragraph = paragraphs[i];
+            const paragraphNumber = i + 1;
+            paragraph.textContent = paragraphNumber + '. ' + paragraph.textContent;
+        }
+
+
+        const myList = document.getElementById('myList');
+        myList.style.display = 'flex';
+        myList.style.listStyleType = 'none';
+
+
+        const span = document.querySelector('span');
+        span.style.display = 'none';
+    </script>
+</body>
+
+</html>

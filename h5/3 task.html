@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 task</title>
+</head>
+
+<body>
+
+
+    <script>
+        const mainElement = document.createElement('main');
+        mainElement.setAttribute('class', 'mainClass check item');
+
+        const divElement = document.createElement('div');
+        divElement.setAttribute('id', 'myDiv');
+
+        const paragraphElement = document.createElement('p');
+        paragraphElement.textContent = 'First paragraph';
+
+        divElement.appendChild(paragraphElement);
+
+        mainElement.appendChild(divElement);
+
+        document.body.appendChild(mainElement);</script>
+</body>
+
+</html>
