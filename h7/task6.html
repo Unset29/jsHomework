@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #displaySize {
+            display: flex;
+            justify-content: center;
+            background-color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="displaySize"></div>
+
+    <script>
+        const displaySize = document.getElementById('displaySize');
+
+        function updatedisplaySize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            displaySize.textContent = `Width: ${width}px, Height: ${height}px`;
+        }
+
+        window.addEventListener('resize', updatedisplaySize);
+
+        updatedisplaySize();</script>
+</body>
+
+</html>

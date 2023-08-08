@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #message {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myButton">Press Me</button>
+    <p id="message"></p>
+
+    <script>
+        const myButton = document.getElementById('myButton');
+        const message = document.getElementById('message');
+
+        myButton.addEventListener('click', function () {
+            message.textContent = "I was pressed!";
+        });
+
+        myButton.addEventListener('mouseover', function () {
+            message.textContent = "Mouse on me!";
+        });
+
+        myButton.addEventListener('mouseout', function () {
+            message.textContent = "Mouse is not on me!";
+        });
+    </script>
+</body>
+
+</html>
