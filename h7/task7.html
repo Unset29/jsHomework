@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        select {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+ <div class="container">
+        <select name="country" id="country" onchange="updateCities()">
+            <option value="ger">Germany</option>
+            <option value="usa">USA</option>
+            <option value="ukr">Ukraine</option>
+        </select>
+                    
+        <select name="cities" id="cities"></select>
+    </div>
+    <p id="result"></p>
+
+    <script>
+        const countrySelect = document.getElementById("country");
+        const citiesSelect = document.getElementById("cities");
+        const resultParagraph = document.getElementById("result");
+        
+        const citiesByCountry = {
+            ger: ["Berlin", "Hamburg", "Munich"],
+            usa: ["New York", "Los Angeles", "Chicago"],
+            ukr: ["Kyiv", "Lviv", "Odessa"]
+        };
+        
+        function updateCities() {
+            citiesSelect.innerHTML = "";
+            
+            const selectedCountry = countrySelect.value;
+            
+            const cities = citiesByCountry[selectedCountry];
+            
+            cities.forEach(function(city) {
+                const option = document.createElement("option");
+                option.text = city;
+                citiesSelect.add(option);
+            });
+            
+            const selectedCity = citiesSelect.value;
+            resultParagraph.textContent = countrySelect.options[countrySelect.selectedIndex].text + " , " + selectedCity;
+        }
+        
+        updateCities();
+    </script>
+</body>
+
+</html>
