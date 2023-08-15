@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 9-4. На HTML-сторінці є 6 чекбоксів. Напишіть скріпт, який після того, як користувач позначив будь-які 3 чекбокси,
+    всі чекбокси робить неактивними. -->
+
+    <input type="checkbox" id="checkbox1">
+    <label for="checkbox1">Checkbox 1</label>
+
+    <input type="checkbox" id="checkbox2">
+    <label for="checkbox2">Checkbox 2</label>
+
+    <input type="checkbox" id="checkbox3">
+    <label for="checkbox3">Checkbox 3</label>
+
+    <input type="checkbox" id="checkbox4">
+    <label for="checkbox4">Checkbox 4</label>
+
+    <input type="checkbox" id="checkbox5">
+    <label for="checkbox5">Checkbox 5</label>
+
+    <input type="checkbox" id="checkbox6">
+    <label for="checkbox6">Checkbox 6</label>
+
+    <script>
+        const checkboxes = document.querySelectorAll("input[type='checkbox']");
+
+        let checkedCount = 0;
+
+        function handleCheckboxChange() {
+            if (this.checked) {
+                checkedCount++;
+                if (checkedCount === 3) {
+                    checkboxes.forEach(checkbox => {
+                        checkbox.disabled = true;
+                    });
+                }
+            } else {
+                checkedCount--;
+            }
+        }
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener("change", handleCheckboxChange);
+        });
+    </script>
+</body>
+
+</html>
