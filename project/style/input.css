@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.logo::before {
+    display: block;
+    content: '';
+    background-image: url(/project/icons/logo.svg);
+    width: 33px;
+    height: 36px;
+}
