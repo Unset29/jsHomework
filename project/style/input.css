@@ -13,3 +13,19 @@ body {
     width: 33px;
     height: 36px;
 }
+
+.linkbtn::after {
+    display: block;
+    content: '';
+    background-image: url(/project/icons/cart.svg);
+    width: 20px;
+    height: 18px;
+}
+
+.checkbox_title::before {
+    display: block;
+    content: '';
+    background-image: url(/project/icons/checkbox.svg);
+    width: 10px;
+    height: 2px;
+}
