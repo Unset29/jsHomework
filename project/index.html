@@ -16,53 +16,107 @@
         <nav class="max-w-7xl mx-auto flex justify-between py-4">
             <h1 class="logo flex items-center gap-2 font-bold text-4xl">Bulbs Shop</h1>
             <div class="buttons">
-                <div class="linkbtn">Admin dashboard</div>
-                <div class="cartbtn"></div>
+                <div class="linkbtn flex items-center gap-2">Admin dashboard</div>
+                <div class="cartbtn">
+                </div>
             </div>
         </nav>
     </header>
     <section class="shop_section">
         <div class="upper_conteiner max-w-7xl mx-auto flex justify-between py-4">
-            <h2 class="item text-3xl font-bold">Led Bulbs</h2>
+            <h2 class="item text-3xl font-bold">Led Bulbs
+            </h2>
             <div class="sortBy font-medium">Sort By:
                 <span class="defaultSpan font-semibold">Default
                 </span>
             </div>
         </div>
-        <div class="content_box max-w-7xl mx-auto flex">
+        <div class="content_box max-w-7xl mx-auto flex gap-4">
             <div class="checkbox_conteiner border rounded">
-                <div class="checkbox_items flex flex-col">
-                    <h3 class="checkbox_title uppercase font-bold flex items-center">BRAND</h3>
-                    <label class="label flex items-center">
+                <div class="checkbox_items flex flex-col ps-6 pr-24 py-4">
+                    <h3 class="checkbox_title uppercase font-bold flex items-center gap-2">BRAND</h3>
+                    <label class="label flex items-center pl-4 pb-1 gap-2 pt-2">
                         <input type="checkbox" class="checkbox w-5 h-5">
-
                         <span class="text">Mi-light</span>
                     </label>
-                    <label class="label">
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
                         <input type="checkbox" class="checkbox w-5 h-5">
-
                         <span class="text">NOWODVORSKI</span>
                     </label>
-                    <label class="label">
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
                         <input type="checkbox" class="checkbox w-5 h-5">
-
                         <span class="text">Biom</span>
                     </label>
-                    <label class="label">
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
                         <input type="checkbox" class="checkbox w-5 h-5">
-
                         <span class="text">OSRAM</span>
                     </label>
-                    <label class="label">
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
                         <input type="checkbox" class="checkbox w-5 h-5">
-
                         <span class="text">Maxus</span>
                     </label>
-                    <label class="label">
+                    <label class="label_last flex items-center pl-4 pb-1 gap-2 ">
                         <input type="checkbox" class="checkbox w-5 h-5">
-
                         <span class="text">Philips</span>
                     </label>
+                </div>
+                <div class="checkbox_items flex flex-col ps-6 pr-24 py-4">
+                    <h3 class="checkbox_title uppercase font-bold flex items-center gap-2">POWER</h3>
+                    <label class="label flex items-center pl-4 pb-1 gap-2 pt-2">
+                        <input type="checkbox" class="checkbox w-5 h-5">
+                        <span class="text">25W</span>
+                    </label>
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
+                        <input type="checkbox" class="checkbox w-5 h-5">
+                        <span class="text">40W</span>
+                    </label>
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
+                        <input type="checkbox" class="checkbox w-5 h-5">
+                        <span class="text">45W</span>
+                    </label>
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
+                        <input type="checkbox" class="checkbox w-5 h-5">
+                        <span class="text">50W</span>
+                    </label>
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
+                        <input type="checkbox" class="checkbox w-5 h-5">
+                        <span class="text">60W</span>
+                    </label>
+                    <label class="label_last flex items-center pl-4 pb-1 gap-2 ">
+                        <input type="checkbox" class="checkbox w-5 h-5">
+                        <span class="text">67W</span>
+                    </label>
+                </div>
+                <div class="checkbox_items flex flex-col ps-6 pr-24 py-4">
+                    <h3 class="checkbox_title uppercase font-bold flex items-center gap-2">TEMPERATURE</h3>
+                </div>
+                <div class="checkbox_items flex flex-col ps-6 pr-24 py-4">
+                    <h3 class="checkbox_title uppercase font-bold flex items-center gap-2">SOCKET</h3>
+                </div>
+            </div>
+            <div class="cart_conteiner border rounded">
+                <div class="cart_item flex flex-col items-center">
+                    <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                    <div class="cart_description pb-4">
+                        <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current <br>
+                            shop
+                            list item</p>
+                        <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                    </div>
+                </div>
+                <div class="prices flex justify-between p-8">
+                    <div class="priceCounter flex">
+                        <span class="moneySymbol font-medium font">$</span>
+                        <h3 class="price font-bold stroke-neutral-800 uppercase">
+                            200
+                        </h3>
+                    </div>
+                    <div class="add_box flex">
+                        <img class="minus w-1 h-1" src="/project/icons/minus.svg" alt="minus">
+                        <p class="counter">1</p>
+                        <div class="increase"></div>
+                        <div class="add_cart_button"></div>
+                    </div>
                 </div>
             </div>
         </div>

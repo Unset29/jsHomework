@@ -17,9 +17,10 @@ body {
 .linkbtn::after {
     display: block;
     content: '';
-    background-image: url(/project/icons/cart.svg);
+    background-image: url(/project/icons/minus.svg);
     width: 20px;
     height: 18px;
+
 }
 
 .checkbox_title::before {
@@ -28,4 +29,18 @@ body {
     background-image: url(/project/icons/checkbox.svg);
     width: 10px;
     height: 2px;
+}
+
+.label_last::after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+}
+
+.add_cart_button {
+    width: 10px;
+    height: 10px;
 }
