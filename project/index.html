@@ -31,8 +31,8 @@
                 </span>
             </div>
         </div>
-        <div class="content_box max-w-7xl mx-auto flex gap-4">
-            <div class="checkbox_conteiner border rounded">
+        <div class="content_box max-w-7xl mx-auto flex">
+            <div class="checkbox_conteiner border rounded mr-6">
                 <div class="checkbox_items flex flex-col ps-6 pr-24 py-4">
                     <h3 class="checkbox_title uppercase font-bold flex items-center gap-2">BRAND</h3>
                     <label class="label flex items-center pl-4 pb-1 gap-2 pt-2">
@@ -55,9 +55,9 @@
                         <input type="checkbox" class="checkbox w-5 h-5">
                         <span class="text">Maxus</span>
                     </label>
-                    <label class="label_last flex items-center pl-4 pb-1 gap-2 ">
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
                         <input type="checkbox" class="checkbox w-5 h-5">
-                        <span class="text">Philips</span>
+                        <span class="text">Plilips</span>
                     </label>
                 </div>
                 <div class="checkbox_items flex flex-col ps-6 pr-24 py-4">
@@ -82,7 +82,7 @@
                         <input type="checkbox" class="checkbox w-5 h-5">
                         <span class="text">60W</span>
                     </label>
-                    <label class="label_last flex items-center pl-4 pb-1 gap-2 ">
+                    <label class="label flex items-center pl-4 pb-1 gap-2">
                         <input type="checkbox" class="checkbox w-5 h-5">
                         <span class="text">67W</span>
                     </label>
@@ -94,29 +94,342 @@
                     <h3 class="checkbox_title uppercase font-bold flex items-center gap-2">SOCKET</h3>
                 </div>
             </div>
-            <div class="cart_conteiner border rounded">
-                <div class="cart_item flex flex-col items-center">
-                    <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
-                    <div class="cart_description pb-4">
-                        <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current <br>
-                            shop
-                            list item</p>
-                        <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+            <div class="cart_holder grid grid-cols-3 gap-4">
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
                     </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="prices flex justify-between p-8">
-                    <div class="priceCounter flex">
-                        <span class="moneySymbol font-medium font">$</span>
-                        <h3 class="price font-bold stroke-neutral-800 uppercase">
-                            200
-                        </h3>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
                     </div>
-                    <div class="add_box flex">
-                        <img class="minus w-1 h-1" src="/project/icons/minus.svg" alt="minus">
-                        <p class="counter">1</p>
-                        <div class="increase"></div>
-                        <div class="add_cart_button"></div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
                     </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart_conteiner border rounded">
+                    <div class="cart_item flex flex-col items-center">
+                        <img src="/project/icons/no_img.svg" class="cart_img p-8" alt="img">
+                        <div class="cart_description pb-4">
+                            <p class="item_describe stroke-neutral-800 font-medium">Some title that describes current
+                                <br>
+                                shop
+                                list item
+                            </p>
+                            <p class="brand_item stroke-neutral-600 font-semibold">Brand 1</p>
+                        </div>
+                    </div>
+                    <div class="prices flex justify-between p-8 items-center">
+                        <div class="priceCounter flex">
+                            <span class="moneySymbol font-medium font">$</span>
+                            <h3 class="price font-bold stroke-neutral-800 uppercase">
+                                200
+                            </h3>
+                        </div>
+                        <div class="add_box flex items-center gap-2">
+                            <div class="decrease"></div>
+                            <p class="counter font-medium">1</p>
+                            <div class="increase"></div>
+                            <div class="add_cart_button text-gray-50 uppercase font-semibold">add</div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

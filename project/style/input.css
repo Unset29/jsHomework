@@ -41,6 +41,15 @@ body {
 }
 
 .add_cart_button {
-    width: 10px;
-    height: 10px;
+    padding: 6px 25px;
+    border-radius: 8px;
+    background-color: green;
+}
+
+.decrease::after {
+    display: block;
+    content: '';
+    background-image: url(/project/icons/minus.svg);
+    width: 20px;
+    height: 18px;
 }
