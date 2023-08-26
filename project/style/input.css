@@ -53,3 +53,23 @@ body {
     width: 20px;
     height: 18px;
 }
+
+.add_product_button::before {
+    background-image: url(/project/icons/Vector.svg);
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+}
+
+.description_button_edit::before {
+    background-image: url(/project/icons/edit.svg);
+    display: block;
+    content: '';
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    padding-right: 20px;
+}
