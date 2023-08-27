@@ -9,7 +9,7 @@ body {
 .logo::before {
     display: block;
     content: '';
-    background-image: url(/project/icons/logo.svg);
+    background-image: url(icons/logo.svg);
     width: 33px;
     height: 36px;
 }
@@ -17,7 +17,7 @@ body {
 .linkbtn::after {
     display: block;
     content: '';
-    background-image: url(/project/icons/minus.svg);
+    background-image: url(icons/minus.svg);
     width: 20px;
     height: 18px;
 
@@ -26,7 +26,7 @@ body {
 .checkbox_title::before {
     display: block;
     content: '';
-    background-image: url(/project/icons/checkbox.svg);
+    background-image: url(icons/checkbox.svg);
     width: 10px;
     height: 2px;
 }
@@ -49,13 +49,13 @@ body {
 .decrease::after {
     display: block;
     content: '';
-    background-image: url(/project/icons/minus.svg);
+    background-image: url(icons/minus.svg);
     width: 20px;
     height: 18px;
 }
 
 .add_product_button::before {
-    background-image: url(/project/icons/Vector.svg);
+    background-image: url(icons/Vector.svg);
     display: block;
     content: '';
     width: 16px;
@@ -65,7 +65,7 @@ body {
 }
 
 .description_button_edit::before {
-    background-image: url(/project/icons/edit.svg);
+    background-image: url(icons/edit.svg);
     display: block;
     content: '';
     background-repeat: no-repeat;

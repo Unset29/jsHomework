@@ -58,7 +58,7 @@ export const adminProduct = (productData) => `
         ${productData.temperature}
     </div>
     <div class="description_buttons flex pl-10 gap-2 pt-6">
-        <a href="/project/adminAdd.html?id=${productData.id}">    
+        <a href="adminAdd.html?id=${productData.id}">    
             <div class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
                 edit
             </div>

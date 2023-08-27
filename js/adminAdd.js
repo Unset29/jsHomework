@@ -53,6 +53,6 @@ const render = () => {
             addProduct(productData);
         }
 
-        window.location.href = "/project/adminPage.html"
+        window.location.href = "adminPage.html"
     });
 })();
