@@ -9,218 +9,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/project/style/output.css">
+    <script type="module" src="/project/js/admin.js" defer></script>
 </head>
 
 <body>
     <header class="bg-blue-600 text-gray-50">
         <nav class="max-w-7xl mx-auto flex items-center justify-between py-4">
-            <h1 class="logo flex items-center gap-2 font-bold text-4xl">Admin page</h1>
+            <h1 class="logo flex items-center gap-2 font-bold text-4xl">
+                Admin page
+            </h1>
         </nav>
     </header>
     <section class="admin_section">
         <div class="upper_admin max-w-7xl mx-auto flex justify-between py-4">
-            <h2 class="item text-3xl font-bold">Led Bulbs
+            <h2 class="item text-3xl font-bold">
+                Led Bulbs
             </h2>
-            <div
-                class="add_product_button flex items-center bg-green-600 text-gray-50 uppercase font-semibold py-3 px-8 rounded-lg">
-                add product
-            </div>
+            <a href="/project/adminAdd.html">
+                <div
+                    class="add_product_button flex items-center bg-green-600 text-gray-50 uppercase font-semibold py-3 px-8 rounded-lg">
+                    add product
+                </div>
+            </a>
         </div>
-        <div class="admin_items border rounded-xl max-w-7xl  mx-auto">
+        <div class="admin_items js-admin-products border rounded-xl max-w-7xl  mx-auto">
             <div class="admin_thead flex">
                 <div class="thead_item font-semibold pl-10">id</div>
                 <div class="thead_item font-semibold pl-28">title</div>
                 <div class="thead_item font-semibold pl-28">brand</div>
+                <div class="thead_item font-semibold pl-28">model</div>
                 <div class="thead_item font-semibold pl-28">power (W)</div>
                 <div class="thead_item font-semibold pl-28">temperatire (K)</div>
                 <div class="thead_item font-semibold pl-28">price ($)</div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
-            </div>
-            <div class="description_box flex items-center">
-                <div class="description_item text-gray-600 pt-6 pl-10">1</div>
-                <div class="description_item text-gray-600 pt-6 pl-24">description</div>
-                <div class="description_item text-gray-600 pt-6 pl-20">SRAM</div>
-                <div class="description_item text-gray-600 pt-6 pl-28">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-40">20W</div>
-                <div class="description_item text-gray-600 pt-6 pl-48">3200</div>
-                <div class="description_buttons flex pl-10 gap-2 pt-6">
-                    <div
-                        class="description_button_edit flex items-center bg-blue-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        edit
-                    </div>
-                    <div
-                        class="description_button_remove bg-red-600 py-2 px-10 rounded-lg uppercase font-semibold text-gray-50">
-                        delete</div>
-                </div>
             </div>
         </div>
     </section>

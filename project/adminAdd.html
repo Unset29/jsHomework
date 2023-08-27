@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/project/style/output.css">
+    <script type="module" src="/project/js/adminAdd.js" defer></script>
 </head>
 
 <body>
@@ -20,32 +21,47 @@
     <div class="upper_add max-w-7xl mx-auto py-4">
         <h2 class="item text-3xl font-bold">Add product
         </h2>
-        <form action="#" class="form flex flex-col gap-4">
+        <form action="#" class="form js-product-data-form flex flex-col gap-4">
             <div class="input_box pt-8">
                 <label class="label font-bold text-xl" for="title">Title</label><br>
-                <input type="text" class="textarea" name="title"
-                    value="Some title that describes current shop list item">
+                <input type="text" class="textarea" name="title" value="">
             </div>
             <div class="input_box">
-                <label class="label font-bold text-xl" for="lname">Price ($)</label><br>
-                <input type="text" class="textarea" name="lname" value="200">
+                <label class="price_label font-bold text-xl" for="price">Price ($)</label><br>
+                <input type="text" class="textarea" name="price" value="">
             </div>
             <div class="input_box">
-                <label class="label font-bold text-xl" class="title" for="fname">Brand</label><br>
-                <input type="text" class="textarea" name="fname" value="OSRAM">
+                <label class="label font-bold text-xl" class="title" for="image">Image url</label><br>
+                <input type="text" class="textarea" name="image" value="">
             </div>
             <div class="input_box">
-                <label class="label font-bold text-xl" for="lname">Power (W)</label><br>
-                <input type="text" class="textarea" name="lname" value="20">
+                <label class="label font-bold text-xl" class="title" for="brand">Brand</label><br>
+                <input type="text" class="textarea" name="brand" value="">
             </div>
             <div class="input_box">
-                <label class="label font-bold text-xl" class="title" for="fname">Temperature (K)</label><br>
-                <input type="text" class="textarea" name="fname" value="3200">
+                <label class="label font-bold text-xl" class="title" for="model">Model</label><br>
+                <input type="text" class="textarea" name="model" value="">
             </div>
-            <div
+            <div class="input_box">
+                <label class="label font-bold text-xl" for="power">Power (W)</label><br>
+                <input type="text" class="textarea" name="power" value="">
+            </div>
+            <div class="input_box">
+                <label class="label font-bold text-xl" class="title" for="temperature">Temperature (K)</label><br>
+                <input type="text" class="textarea" name="temperature" value="">
+            </div>
+            <div class="input_box">
+                <label class="label font-bold text-xl" class="title" for="formFactor">Form factor</label><br>
+                <input type="text" class="textarea" name="formFactor" value="">
+            </div>
+            <div class="input_box">
+                <label class="label font-bold text-xl" class="title" for="socket">Socket</label><br>
+                <input type="text" class="textarea" name="socket" value="">
+            </div>
+            <button type="submit"
                 class="save_button w-28 h-12 bg-green-600 uppercase rounded-md flex items-center justify-center font-bold text-lg text-gray-50">
                 Save
-            </div>
+            </button>
         </form>
     </div>
 

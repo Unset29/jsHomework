@@ -1,0 +1,1 @@
+export const LOCAL_STORAGE_DATA_KEY = 'BULBS_SHOP_DATA';
