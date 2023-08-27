@@ -688,14 +688,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -1331,10 +1323,6 @@ video {
   gap: 1rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1641,10 +1629,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
 }
 
 .rounded-b {
@@ -1996,14 +1980,6 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
@@ -2072,16 +2048,6 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -2167,10 +2133,6 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
-}
-
-.leading-6 {
-  line-height: 1.5rem;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -2578,6 +2540,15 @@ body {
   width: 16px;
   height: 16px;
   padding-right: 20px;
+}
+
+.textarea {
+  width: 400px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding-left: 10px;
+  font-size: 16px;
 }
 
 @media (min-width: 640px) {
